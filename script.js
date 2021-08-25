@@ -1,19 +1,25 @@
 const leftTime = document.querySelector(".leftTime");
 const image = document.querySelector(".image");
 const currectMessage = document.querySelector(".currectMessage")
+const diff = document.querySelector(".difficulty");
 let prePosition = [0,0];
 let position = [3,3];
 let liList = [[],[],[],[]];
-const difficulty = 100;
+let difficulty = 30;
 let rightRoute = [];
 
 
 window.onkeydown = (k) => {
-    console.log(k);
+    //console.log(k);
     let key = move(k.keyCode);
     if(key){
         rightRoute.push(key);
     }
+}
+function setDifficulty(input){
+    console.log('here');
+    console.log(diff.value);
+    difficulty = Number(diff.value);
 }
 function move(keycode){
     console.log(keycode);
@@ -126,12 +132,17 @@ function start(){
     checkAnswer();
 }
 function shuffle(difficulty){
+    let preRandomVal = 0;
     for(let i=0; i<difficulty; i++){
         const randomVal = Math.floor(Math.random()*4+37);
+        if(Math.abs(randomVal-preRandomVal)===2){
+            continue;
+        }
         const keycode = move(randomVal);
         if(keycode){
             rightRoute.push(keycode);
-        }
+            preRandomVal = randomVal;
+        }        
     }
     console.log(rightRoute);
 }

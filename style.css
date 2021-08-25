@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 4rem;
 }
 ul {
   display: grid;
@@ -18,6 +19,10 @@ li {
   height: 100px;
   background: url("https://placeimg.com/400/400/any");
   border: solid white 2px;
+}
+button{
+  padding: 4px;
+  margin: 10px
 }
 .image1 {
   background-position-x: 0px;
