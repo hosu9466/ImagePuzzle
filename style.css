@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+li {
+  list-style: none;
+  width: 100px;
+  height: 100px;
+  background: url("https://placeimg.com/400/400/any");
+  border: solid white 2px;
+}
+.image1 {
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+.image2 {
+  background-position-x: -100px;
+  background-position-y: 0px;
+}
+.image3 {
+  background-position-x: -200px;
+  background-position-y: 0px;
+}
+.image4 {
+  background-position-x: -300px;
+  background-position-y: 0px;
+}
+.image5 {
+  background-position-x: 00px;
+  background-position-y: -100px;
+}
+.image6 {
+  background-position-x: -100px;
+  background-position-y: -100px;
+}
+.image7 {
+  background-position-x: -200px;
+  background-position-y: -100px;
+}
+.image8 {
+  background-position-x: -300px;
+  background-position-y: -100px;
+}
+.image9 {
+  background-position-x: 00px;
+  background-position-y: -200px;
+}
+.image10 {
+  background-position-x: -100px;
+  background-position-y: -200px;
+}
+.image11 {
+  background-position-x: -200px;
+  background-position-y: -200px;
+}
+.image12 {
+  background-position-x: -300px;
+  background-position-y: -200px;
+}
+.image13 {
+  background-position-x: 00px;
+  background-position-y: -300px;
+}
+.image14 {
+  background-position-x: -100px;
+  background-position-y: -300px;
+}
+.image15 {
+  background-position-x: -200px;
+  background-position-y: -300px;
+}
+.image16 {
+  background-position-x: -300px;
+  background-position-y: -300px;
+}
+.currectMessage{
+  position: absolute;
+  font-size: 3rem;
+  display: none;
+  color: white;
+}
